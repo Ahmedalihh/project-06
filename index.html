@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="forms.css" />
+  </head>
+  <body>
+    <fieldset>
+      <legend>Data Form</legend>
+      <form>
+        <center>
+          <h3>Termination Checklist</h3>
+        </center>
+        <img src="./images/pic9.jpeg" height="15px" width="20px" alt="" />
+        <img src="./images/pic10.jpeg" height="15px" width="20px" alt="" />
+        <img src="./images/pic8.png" height="15px" width="20px" alt="" />
+        <img src="./images/pic12.png" height="15px" width="20px" alt="" />
+
+        <center>
+          <hr />
+          <label for="Employee Name">Employee Name</label>
+          <br />
+          <input
+            type="text"
+            id="Employee Name"
+            required
+            maxlength="8"
+            placeholder="First Name"
+          />
+
+          <input
+            type="text"
+            id="Employee Name"
+            required
+            minlength="3"
+            placeholder="Last Name"
+          />
+          <br />
+          <label for="Employee ID">Employee ID</label>
+          <br />
+          <input type="text" id="Employee ID" />
+          <br />
+          <label for="Supervisor name">Supervisor name</label>
+          <br />
+          <input type="text" id="Supervisor name" />
+          <br />
+          <label for="Department">Department</label>
+          <br />
+
+          <input
+            list="editor"
+            id="Department"
+            name="editor"
+            placeholder="Select Department"
+          />
+          <datalist id="editor">
+            <option value="Marketing">Marketing</option>
+            <option value="Product">Product</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Sales">Sales</option>
+            <option value="Customer Support">Customer Support</option>
+          </datalist>
+          <br />
+          <label for="date"> Exit/Termination Date</label>
+          <br />
+          <input type="date" id="date" placeholder="date" />
+          <br />
+
+          <label for="name">Name of HR processing exit/termination</label>
+          <br />
+
+          <input type="text" required id="name" />
+          <br />
+          <label for="">Gender:</label>
+          <br />
+          <label for="Male">Male</label>
+          <input type="radio" id="Male" name="Gender" />
+          <label for="Female">Female</label>
+          <input type="radio" id="Female" name="Gender" />
+          <br />
+          <label for="DOB">DOB</label>
+          <br />
+          <input type="datetime-local" id="DOB" required placeholder="DOB " />
+          <br />
+          <label for="Email">Email</label>
+          <br />
+
+          <input type="email" id="Email" required placeholder="Email" />
+          <br />
+          <label for="">Country</label>
+          <br />
+          <select name="editor" id="multiple">
+            <option value="Select Country" disabled selected>
+              Select Country
+            </option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Japan">Japan</option>
+
+            <option value="USA">USA</option>
+          </select>
+          <br />
+          <label for=""> Hobbies</label>
+          <br />
+          <input type="checkbox" placeholder="Hobbies" checked />Study <br />
+          <input type="checkbox" placeholder="Hobbies" />Walk <br />
+          <input type="checkbox" placeholder="Hobbies" />Art <br />
+          <input type="checkbox" placeholder="Hobbies" />Learning html
+          <br />
+          <br />
+          <input type="file" />
+          <br />
+          <br />
+          <label for="Password">Password</label>
+          <br />
+          <input type="password" id="Password" placeholder="password" />
+        </center>
+        <br />
+        <center>
+          <button>Submit</button>
+        </center>
+      </form>
+    </fieldset>
+  </body>
+</html>
